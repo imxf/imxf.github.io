@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小凡网</title>
+	<style>
+		*{ transition:0.5s; -moz-transition:0.5s; -webkit-transition:0.5s; -o-transition:0.5s; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+		::-webkit-scrollbar{width: 1px; height: 1px;}
+		::-webkit-scrollbar-track{background: #000;}
+		::-webkit-scrollbar-thumb{background: #fff;}
+		html,body{margin: 0px; padding: 0px; background: #000000; color:#C8C8C8; cursor: url(default.cur) , default;}
+		a{color: #c8c8c8; text-decoration: none; cursor: url(link.cur), pointer;}
+		#touxiang{width: 150px; height: 150px; margin-top: 100px;}
+		#tx{border-radius: 75px;}
+		#tx:hover{box-shadow: #fff 0px 0px 15px;}
+		#menus{width: 500px; padding: 15px; overflow: auto; margin-top: 50px;}
+		.but{width: 25%; height: 30px; float: left; line-height: 30px; border-radius: 5px; cursor: url(link.cur), pointer;}
+		.but:hover{box-shadow: #fff 0px 0px 15px; color: #FFF; text-shadow: #0f0 0px 0px 10px; background: url(timg.gif) center center no-repeat; background-size: cover;}
+		.xx{font-size: 14px; line-height: 20px;}
+		.sj{width: 35px; height: 35px; float: left; background: url(sjico.png) no-repeat;}
+	</style>
+</head>
+
+<body unselectable="on">
+	<center>
+		<div id="touxiang">
+			<img id="tx" class="xx"  src="//q2.qlogo.cn/headimg_dl?bs=2327221172&dst_uin=2327221172&dst_uin=2327221172&;dst_uin=qq&spec=100&url_enc=0&referer=bu_interface&term_type=PC" width="100%" height="100%" />
+		</div>
+		<div id="menus">
+			<a href="http://i.mcxiaofan.cn/" target="_blank"><div class="but">博客</div></a>
+			<div class="but" onClick="gt(2)">留言板</div>
+			<div class="but" onClick="gt(1)">关于我</div>
+			<div class="but" onClick="gt(0)">DEMO</div>
+		</div>
+		<div id="demo" class="xx" style="width: 480px; padding: 10px; box-shadow: #fff 0px 0px 15px; display: none; border-radius: 5px; margin-top: 30px; text-align: left;">
+			这个标签
+		</div>
+		<div id="aboutme" class="xx" style="width: 480px; padding: 10px; box-shadow: #fff 0px 0px 15px; display: none; border-radius: 5px; margin-top: 30px; text-align: left;">
+			姓名：小凡<br />
+			技能：吃饭，睡觉<br />
+			联系：<a href="javascript:gt(3);"><img src="qq.png" height="14" />2327221172<br /></a>
+			<div style="height: 0px; width: 100%; border-bottom: 1px solid #c8c8c8; margin: 10px 0px; box-shadow: 0px 0px 10px #0f0"></div>
+			<a href="https://space.bilibili.com/13267314/" target="_blank"><div class="sj" style="background-position: 0px 0px;"></div></a>
+			<a href="http://music.163.com/#/user/home?id=107306243" target="_blank"><div class="sj" style="background-position: -35px 0px;"></div></a>
+			<a href="http://weibo.com/xfv587" target="_blank"><div class="sj" style="background-position: -70px 0px;"></div></a>
+			<div style="height: 0px; width: 100%; border-bottom: 1px solid #c8c8c8; margin: 10px 0px; box-shadow: 0px 0px 10px #0f0; clear: both;">
+			</div>
+			&nbsp;&nbsp;&nbsp;&nbsp;2014年有了这个域名，一直在做博客，做了删了，删了又做，刚开始用百度联盟和搜狗联盟的广告盈利，把服务器钱和域名钱赚回来了，甚至还有钱吃泡面了。然而，我并没有心思再做下去了，网站访问量少的可怜，我决定不做了，数据全删了，就这样，学习些技能，再发些原创的东西。
+		</div>
+		<br /><br /><br />
+		<small>&copy;小凡网 2017 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256787930'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256787930' type='text/javascript'%3E%3C/script%3E"));</script></small><br /><br />
+	</center>
+	<script>
+		function gt(a){
+			if(a==0){
+				var tg0 = document.getElementById('demo');
+				var tg1 = document.getElementById('aboutme');
+				if(tg0.style.display==""){
+					tg0.style.display="none"
+				}else{
+					tg0.style.display=""
+					tg1.style.display="none"
+				}
+			}else if(a==1){
+				var tg0 = document.getElementById('demo');
+				var tg1 = document.getElementById('aboutme');
+				if(tg1.style.display==""){
+					tg1.style.display="none"
+				}else{
+					tg1.style.display=""
+					tg0.style.display="none"
+				}
+			}else if(a == 2){
+				window.open("https://gip.xfdgw.pw");
+			}else if(a == 3){
+				window.open("http://sighttp.qq.com/authd?IDKEY=915067d172e8e70de43d5765783f16138b7cee9acb7881d2");
+			}
+		}
+		
+	</script>
+</body>
+</html>
