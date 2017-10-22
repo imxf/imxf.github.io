@@ -8,7 +8,7 @@
 		::-webkit-scrollbar{width: 1px; height: 1px;}
 		::-webkit-scrollbar-track{background: #000;}
 		::-webkit-scrollbar-thumb{background: #fff;}
-		html,body{margin: 0px; padding: 0px; background: #000000; color:#C8C8C8; cursor: url(default.cur) , default;}
+		html,body{margin: 0px; padding: 0px; width: 100%; height: 100%; background: #000000; color:#C8C8C8; cursor: url(default.cur) , default;}
 		a{color: #c8c8c8; text-decoration: none; cursor: url(link.cur), pointer;}
 		#touxiang{width: 150px; height: 150px; margin-top: 100px;}
 		#tx{border-radius: 75px;}
@@ -78,6 +78,37 @@
 		}
 		
 	</script>
+		<script src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = new Array("天真","富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+        var $i = $("<span/>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 23333,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "#00FF00",
+			"font-size": "14px"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1000,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script>
 	<audio controls="" loop="" autoplay="autoplay" style="display:none;">
 <source src="//re.mcxiaofan.cn/uploads/aft.mp3" type="audio/ogg">
 <source src="//re.mcxiaofan.cn/uploads/aft.mp3" type="audio/mpeg">
